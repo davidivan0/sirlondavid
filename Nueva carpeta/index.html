@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Menú de Comidas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+      font-family: 'Montserrat', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .logo-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .logo-container img {
+      width: 280px;
+      height: auto;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 54px;
+      margin: 15px 0;
+      color: #e63946;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+      margin: 50px 20px;
+    }
+    .menu-item {
+      background-color: #1e1e1e;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(230,57,70,0.5);
+      width: 300px;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+    }
+    .menu-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(230,57,70,0.8);
+    }
+    .menu-item h2 {
+      font-size: 26px;
+      font-weight: 700;
+      margin: 10px 0;
+      color: #f1faee;
+    }
+    .menu-item img {
+      border-radius: 12px;
+      margin-bottom: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.6);
+      width: 260px;
+      height: auto;
+    }
+    .menu-item p.description {
+      color: #a8dadc;
+      font-style: italic;
+      margin: 0 0 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-container">
+    <img src="https://sirloin.mx/public/img/logo_sirloin.png" alt="Logo Sirloin" />
+  </div>
+  <h1>Sirloin Stockade - Menú del día</h1>
+  <div class="menu-container">
+    <div class="menu-item">
+      <h2>Pizza</h2>
+      <img src="https://th.bing.com/th/id/R.4b4a6145c97b25bde595af3cf3ccfd4e?rik=SUIgvLurQTkimQ&riu=http%3a%2f%2fcdn2.cocinadelirante.com%2fsites%2fdefault%2ffiles%2fimages%2f2017%2f01%2fpizzapepperonni.jpg&ehk=x0HLkLvdT7LLg7VlVu435k2lEPUeT9tD0E%2b%2bS%2f60M5M%3d&risl=&pid=ImgRaw&r=0" alt="Pizza" />
+      <p class="description">Pepperoni, queso mozzarella y salsa de tomate.</p>
+    </div>
+    <div class="menu-item">
+      <h2>Hamburguesa</h2>
+      <img src="https://th.bing.com/th/id/R.a4dc4cb6e12140010af594d430490ada?rik=1SRmIHwXQdpiHg&riu=http%3a%2f%2fwww.unileverfoodsolutions.com.co%2fdam%2fglobal-ufs%2fmcos%2fNOLA%2fcalcmenu%2frecipes%2fcol-recipies%2ffruco-tomate-cocineros%2fHAMBURGUESA+1200x709.png&ehk=12fD27rm5Fj4INOTvgq3Z0yMS3mcsABh5%2fS%2b0d7m3II%3d&risl=&pid=ImgRaw&r=0" alt="Hamburguesa" />
+      <p class="description">Carne jugosa con queso, lechuga y tomate.</p>
+    </div>
+    <div class="menu-item">
+      <h2>Ensalada</h2>
+      <img src="https://cdn7.kiwilimon.com/clasificacion/3656/3656.jpg" alt="Ensalada" />
+      <p class="description">Lechuga fresca, jitomate, pepino y aderezo especial.</p>
+    </div>
+    <div class="menu-item">
+      <h2>Tacos</h2>
+      <img src="https://th.bing.com/th/id/OIP.wzHDZyXFwPiF5VcX3KbQkwHaFB?rs=1&pid=ImgDet&rs=1" alt="Tacos" />
+      <p class="description">Tortillas rellenas con carne y salsa picante.</p>
+    </div>
+    <div class="menu-item">
+      <h2>Sushi</h2>
+      <img src="https://th.bing.com/th/id/OIP.OwdxZAqIbEafgpEy0KkL4AHaE2?rs=1&pid=ImgDetMain" alt="Sushi" />
+      <p class="description">Rollos de arroz con pescado fresco y algas.</p>
+    </div>
+  </div>
+</body>
+</html>
